@@ -17,14 +17,10 @@ public class grapInteractable : MonoBehaviour
 
     public void setColorOnhover()
     {
-        
-            meshRenderer.material = Onhover;
-        
+        meshRenderer.material = Onhover;
     }
     public void setColorHover()
     {
-        
-            meshRenderer.material = hover;
-       
+        meshRenderer.material = hover;
     }
 }
