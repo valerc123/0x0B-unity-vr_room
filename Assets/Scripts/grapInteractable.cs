@@ -15,12 +15,16 @@ public class grapInteractable : MonoBehaviour
         meshRenderer.material = Onhover;
     }
 
-    public void setColorOnhover(Collider other)
+    public void setColorOnhover()
     {
-        meshRenderer.material = Onhover;
+        
+            meshRenderer.material = Onhover;
+        
     }
-    public void setColorHover(Collider other)
+    public void setColorHover()
     {
-        meshRenderer.material = hover;
+        
+            meshRenderer.material = hover;
+       
     }
 }
