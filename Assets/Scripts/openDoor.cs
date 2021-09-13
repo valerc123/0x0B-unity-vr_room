@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class openDoor : MonoBehaviour
 {
-    private Animator animator;
-    public bool switchAnimation = true;
-   
+    public GameObject canvas;
+    public bool switchAnimation = false;
     void Start(){
-        animator = GetComponent<Animator>();
-        animator.SetBool("character_nearby", false);
+        canvas.SetActive(false);
     }
     public void activeAnimation(){
-        animator.SetBool("character_nearby", switchAnimation);
+        canvas.SetActive(switchAnimation);
         switchAnimation = !switchAnimation;
     }
 }
